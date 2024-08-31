@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suna Scripts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Suna Scripts</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Scripts</a></li>
+                <li><a href="#">Executores</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo ao Suna Scripts</h2>
+            <p>Os melhores scripts para Roblox em um só lugar.</p>
+        </section>
+
+        <section class="executor-cards">
+            <h2>Download de Executores</h2>
+            <div class="card">
+                <img src="https://cdn.discordapp.com/attachments/1235852547239968809/1279233931832721458/Arceus.webp?ex=66d3b2f0&is=66d26170&hm=3507df7264445f387cf94e7deef3d732ee627cedd436f74c09f8ee6174323b69&"
+                    alt="Arceus x neo">
+                <div class="card-content">
+                    <h3>Arceus x neo</h3>
+                    <p>O executor mais seguro e rápido para Roblox.</p>
+                    <p><strong>Versão:</strong> 2.639</p>
+                    <p><strong>Status:</strong> <span class="status offline">Offline</span></p>
+                    <a href="#" class="download-btn" target="_blank">Baixar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.discordapp.com/attachments/1235852547239968809/1279233960970293290/Fluxus.webp?ex=66d3b2f7&is=66d26177&hm=8162db7428f59016837fa79864aa882b24fcef89772966b9d9fa1325d4f014b0&"
+                    alt="Executor 2">
+                <div class="card-content">
+                    <h3>Fluxus</h3>
+                    <p>Alta compatibilidade e desempenho excelente.</p>
+                    <p><strong>Versão:</strong> 2.639</p>
+                    <p><strong>Status:</strong> <span class="status online">Online</span></p>
+                    <a href="https://www.mediafire.com/file/3v6fb2wpodfd07f/Fluxus+2.639.688.apk/file"
+                        class="download-btn" target="_blank">Baixar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.discordapp.com/attachments/1235852547239968809/1279237322218536983/Delta.webp?ex=66d3b618&is=66d26498&hm=9eae096cc6561dd1489809ab9ede39605cf91e0b4a67153cdea7122b80ef94b1&"
+                    alt="Executor 3">
+                <div class="card-content">
+                    <h3>Delta</h3>
+                    <p>Interface intuitiva e fácil de usar.</p>
+                    <p><strong>Versão:</strong> 2.639</p>
+                    <p><strong>Status:</strong> <span class="status online">Online</span></p>
+                    <a href="https://www.mediafire.com/file/0haehaqtjye6m3x/Delta-2.639.688.apk/file"
+                        class="download-btn" target="_blank">Baixar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="script-cards">
+            <h2>Scripts</h2>
+            <div class="card">
+                <h3>W-Azure</h3>
+                <pre
+                    class="script-box">loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))() </pre>
+                <button class="copy-btn" onclick="copyScript('script1')">Copiar</button>
+            </div>
+            <div class="card">
+                <h3>Annie Hub</h3>
+                <pre
+                    class="script-box">loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecuti/Free-Scr/main/Annie-Hub.lua"))()</pre>
+                <button class="copy-btn" onclick="copyScript('script2')">Copiar</button>
+            </div>
+            <div class="card">
+                <h3>Redz hub</h3>
+                <pre
+                    class="script-box">loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()</pre>
+                <button class="copy-btn" onclick="copyScript('script3')">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Suna Scripts. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function copyScript(scriptId) {
+            const script = document.querySelector(`.${scriptId}`);
+            navigator.clipboard.writeText(script.textContent)
+                .then(() => alert('Script copiado!'))
+                .catch(err => console.error('Erro ao copiar o script:', err));
+        }
+    </script>
+</body>
+
+</html>
